@@ -3,7 +3,9 @@ services:
     plan: free
     name: cloud-render-app
     runtime: node
+    region: frankfurt
     repo: https://github.com/tavananh95/cloud-render-test.git
+    branch: master
     buildCommand: 'npm install'
     startCommand: 'npm start'
     envVars:
@@ -15,3 +17,4 @@ services:
 databases:
   - name: cloud-render-db
     plan: free
+    region: frankfurt
